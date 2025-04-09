@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Tablet (768px+) */
 @media screen and (min-width: 768px) {
   .header {
     flex-direction: row;
@@ -7,14 +8,7 @@
     padding: var(--space-md) var(--space-lg);
   }
 
-  .header__title {
-    font-size: var(--font-size-xl);
-    text-align: left;
-  }
-
   .nav {
-    display: flex;
-    justify-content: center;
     padding: var(--space-sm) var(--space-lg);
   }
 
@@ -30,80 +24,21 @@
     gap: var(--space-sm);
   }
 
-  .nav__link {
-    padding: var(--space-xs) var(--space-md);
-    border-radius: var(--border-radius);
-  }
-
   .main {
     width: 90%;
     padding: var(--space-lg);
   }
 
-  .welcome-message {
-    padding: var(--space-lg);
-  }
-
-  /* Layout Grid para notícias */
   .news-grid {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-auto-flow: dense;
-    align-items: start;
-  }
-
-  .article {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  /* Variar a altura dos blocos para criar efeito orgânico */
-  .section:nth-child(3n + 1) .article {
-    grid-row: span 2;
-  }
-
-  .section:nth-child(5n + 2) .article {
-    grid-row: span 1;
-  }
-
-  .section:nth-child(7n + 3) .article {
-    grid-row: span 3;
-  }
-
-  /* Layout com texto primeiro */
-  .article__content {
-    order: 1;
-    flex: 1;
-  }
-
-  .article__image {
-    order: 2;
-    margin-top: var(--space-sm);
-  }
-
-  /* Alternar padrão para algumas notícias */
-  .section:nth-child(even) .article {
-    flex-direction: column-reverse;
-  }
-
-  .section:nth-child(even) .article__image {
-    margin-top: 0;
-    margin-bottom: var(--space-sm);
-  }
-
-  .section__title {
-    font-size: var(--font-size-xl);
-  }
-
-  .article__title {
-    font-size: var(--font-size-lg);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .article__img {
-    height: 180px;
+    height: auto;
   }
 }
 
+/* Desktop (1024px+) */
 @media screen and (min-width: 1024px) {
   .header {
     padding: var(--space-md) var(--space-xl);
@@ -126,14 +61,18 @@
     justify-content: space-between;
   }
 
+  .news-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .article__img {
+    height: auto;
+  }
+
   /* Ajustes para telas grandes */
   .news-grid {
     grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     gap: var(--space-lg);
-  }
-
-  .article__img {
-    height: 220px;
   }
 
   /* Maior variação no layout masonry */
