@@ -49,10 +49,7 @@
   bottom: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
   color: var(--color-white);
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
   font-weight: bold;
   font-size: 1rem;
   transition: var(--transition);
@@ -64,7 +61,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 /* News Grid Layout */
