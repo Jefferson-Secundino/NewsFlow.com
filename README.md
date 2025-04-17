@@ -96,7 +96,6 @@ A interface se adapta perfeitamente a diferentes resoluções:
 
 - 🛠️ **Sistema de Busca Funcional**: Integração com API de notícias ou JavaScript puro.
 - 🌙 **Modo Escuro/Claro**: Alternância de temas para maior conforto visual.
-- 📱 **PWA (Progressive Web App)**: Implementação de `service worker` para acesso offline e instalação no dispositivo.
 - 📤 **Compartilhamento Social**: Botões para compartilhar notícias nas redes sociais.
 - 🧠 **Filtro por Categoria**: Permitir exibição personalizada por temas de interesse.
 - 🗂️ **Páginas por Seção**: Criar páginas dedicadas a cada categoria de notícia.
